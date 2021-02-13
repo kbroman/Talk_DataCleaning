@@ -1,0 +1,14 @@
+Why don't we teach data cleaning? It has been said that it is difficult to generalize: that what we learn from cleaning Medicare data cannot be readily applied to the cleaning of RNA-seq data. To the contrary, I think there are important general principles for cleaning data, and there are more commonalities in the creative process of data cleaning than in other aspects of data analysis. I will seek to delineate and illustrate these principles, which include:
+
+(1) think about what might have gone wrong and how it might be revealed
+(2) study the pattern of missing data and ask why they are missing
+(3) use care when merging datasets and focus on labels not position
+(4) if things are supposed to match, check that they do
+(5) if things are supposed to be distinct, check that they are
+(6) look for outliers and other oddities by making lots of plots, particularly scatterplots
+(7) look for batch effects by making lots of plots, particularly plots against time and scatterplots colored by batch
+(8) ask for the primary data and also metadata
+(9) don’t be shy about asking questions
+(10) document not just what you did but also why you did it
+(11) don’t trust anyone (even yourself)
+(12) allocate sufficient time and energy to the effort
