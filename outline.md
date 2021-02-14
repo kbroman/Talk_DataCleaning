@@ -83,3 +83,14 @@ Data cleaning code cannot be clean. It's a sort of sin eater.
 
 I will let the data speak for itself when it cleans itself.
 <https://twitter.com/AllisonReichel/status/1350107719236247558>
+
+---
+
+Split principles into four groups:
+- verify
+- explore
+- confer (or collaborate)
+- document
+
+would be nice to have balance, like 4 groups of 4 things, or 4 groups
+of 3 things where each has some over-arching principle
