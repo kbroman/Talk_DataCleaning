@@ -94,3 +94,5 @@ Split principles into four groups:
 
 would be nice to have balance, like 4 groups of 4 things, or 4 groups
 of 3 things where each has some over-arching principle
+
+a principle on top of everything: "trust no one" (or is that part of "verify"?)
