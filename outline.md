@@ -58,20 +58,20 @@ Ask for metadata (easier to identify with variables that you understand)
 6. Look at missing data patterns
 - Subjects present in one file but missing from another
 7. Yeah but why are they missing?
-7. Plot stuff: vs time, and scatterplots
+8. Plot stuff: vs time, and scatterplots
    - Batch differences
-8. Dates suck
-9. Categories suck
-10. Create checklists and pipelines
+9. Dates suck
+10. Categories suck
+11. Create checklists and pipelines
     - make use of your experience
-11. Data cleaning should be more than reproducible; document not just what but why
-12. Don’t be shy about asking questions
-13. If you find a problem, look for other instances of the problem
-14. Are the things that should be distinct actually distinct?
-15. Are the things that should be consistent actually consistent?
-16. There will always be typos
-17. Don’t trust anyone (even yourself)
-18. Look for outliers (real variation or error?)
+12. Data cleaning should be more than reproducible; document not just what but why
+13. Don’t be shy about asking questions
+14. If you find a problem, look for other instances of the problem
+15. Are the things that should be distinct actually distinct?
+16. Are the things that should be consistent actually consistent?
+17. There will always be typos
+18. Don’t trust anyone (even yourself)
+19. Look for outliers (real variation or error?)
 
 “I have a dream: one day ads for positions in data science groups  will include terms like “diagnostics specialist” as well as expertise in statistical modeling, forecasting, machine learning.” Di Cook (@visnut)
 
