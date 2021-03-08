@@ -95,17 +95,9 @@ From abstract:
 11. don’t trust anyone (even yourself)
 12. allocate sufficient time and energy to the effort
 
-
-
 ---
 
-Data cleaning code cannot be clean. It's a sort of sin eater.
-<https://twitter.com/StatFact/status/492753200190341120>
 
----
-
-I will let the data speak for itself when it cleans itself.
-<https://twitter.com/AllisonReichel/status/1350107719236247558>
 
 ---
 
