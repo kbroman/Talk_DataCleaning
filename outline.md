@@ -5,6 +5,13 @@ Roger Peng quote: “each dataset is unique; approach to cleaning medicare data 
 “Frustratingly difficult to generalize”
 “If I clean up administrative claims data from Medicare...does any of the knowledge I gain...apply to the processing of RNA-seq data?”
 
+"Tidy data are all alike, but every messy dataset is messy in its own
+way"
+https://r4ds.had.co.nz/tidy-data.html
+- I don't really believe that either
+
+---
+
 Really:
 - it’s tedious
 - the results are often embarrassing
@@ -17,6 +24,22 @@ But also
 - it’s the source of most problems
 - it requires are most detailed coding prowess
 - you don’t appreciate it until later
+
+---
+
+> Data cleaning code cannot be clean. It's a sort of sin eater.
+
+— [@StatFact](https://twitter.com/StatFact)
+[tweet](https://twitter.com/StatFact/status/492753200190341120)
+
+---
+
+> I will let the data speak for itself when it cleans itself.
+
+— [@AllisonReichel](https://twitter.com/AllisonReichel)
+[tweet](https://twitter.com/AllisonReichel/status/1350107719236247558)
+
+---
 
 DataMishaps Night
 - more than half of mishaps were a data cleaning or data merge problem
