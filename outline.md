@@ -97,7 +97,10 @@ From abstract:
 
 ---
 
+"Wait a minute...that's not really a principle"
 
+what is a principle?
+- fundamental truth that guides our thinking
 
 ---
 
