@@ -1,0 +1,31 @@
+fundamentals
+1. “Don’t do data QC when tired, hungry, or thirsty” (or angry)
+   - Ghazal Gulati, @ghazalgulati [Allocate sufficient time and energy]
+2. Think about what might have gone wrong, and how it might be revealed
+3. Don’t trust anyone (even yourself)
+4. Use care in merging: Focus on labels not position (e.g. rows or columns get swapped)
+5. Dates and categories suck
+
+verify
+6. Are the things that should be distinct actually distinct?
+7. Are the things that should be consistent actually consistent?
+8. Double-check calculations
+9. If you find a problem, look for other instances of the problem
+
+explore
+10. Plot stuff: vs time, and scatterplots (e.g. batch differences)
+11. Look at missing data patterns (e.g. subjects present in one file but missing from another)
+12. Look for outliers (real variation or error?)
+13. There will always be typos
+
+confer
+14. Don’t be shy about asking questions
+15. Ask for the primary data (mistakes may have been made in the compiling)
+    (look for odd rounding patterns)
+16. Ask for metadata (easier to identify with variables that you understand)
+17. "Yeah but why are they missing?" Ask about the nature of the missing data
+
+document
+18. Create checklists and pipelines: codify your experience
+19. Data cleaning should be more than reproducible: document not just what but why
+20. Expect to recheck
