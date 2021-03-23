@@ -3,6 +3,12 @@
 Proposed talk for [csv,conf,v6](https://csvconf.com/).
 
 
+## Required packages
+
+- [berryFunctions](https://cran.r-project.org/package=berryFunctions)
+- [broman](https://cran.r-project.org/package=broman)
+
+
 ## License
 
 To the extent possible under law,
