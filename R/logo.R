@@ -1,41 +1,37 @@
-# make a circle logo with "verify", "explore", "confer", and "document"
+# make logo of rounded rectangles with "fundamentals", "verify", "explore", "confer", "document"
+library(berryFunctions)
+library(broman)
 
-d <- 0.04
+gap <- 2
+height <- 25
+width <- 50
 lwd <- 5
-r <- 1
-text_cex <- 2.9
+text_cex <- 4
+rounding <- 0.2
 
-pdf("../Figs/logo.pdf", height=7.5, width=10, pointsize=12)
+text <- c("fundamentals", "verify", "explore", "confer", "document")
+colors <- brocolors("web")[c("black", "blue", "green", "orange", "purple")]
 
-par(pty="s")
+pdf("../Figs/logo.pdf", height=7.5, width=10, pointsize=14)
+
+par(mar=rep(0,4))
 plot(0,0,type="n", xlab="", ylab="", xaxt="n", yaxt="n",
-     xlim=c(-r*1.05-d,r*1.05+d), ylim=c(-r*1.05-d,r*1.05+d), bty="n", xaxs="i", yaxs="i")
+     xlim=c(0, width*2 + gap*2), ylim=c(0, height*3 + gap*3),
+     bty="n", xaxs="i", yaxs="i")
 
-n <- 201
-z <- seq(0, pi/2, len=n)
 
-x0 <- y0 <- d
-lines(r*cos(z)+x0, r*sin(z)+y0, lwd=lwd)
-segments(x0, y0, x0+r, y0, lwd=lwd)
-segments(x0, y0, x0, y0+r, lwd=lwd)
-text(x0+r-d, y0+d*3, "confer", adj=c(1, 0.5), cex=text_cex)
+w <- c(width*2+gap, rep(width, 4))
+h <- rep(height, 5)
+x <- c(gap*0.5, rep(c(gap*0.5, gap*1.5 + width), 2))
+y <- c(height*2 + gap*2.5, height + gap*1.5, height + gap*1.5,
+       gap*0.5, gap*0.5)
 
-x0 <- -d; y0 <- d
-lines(r*cos(z+pi/2)+x0, r*sin(z+pi/2)+y0, lwd=lwd)
-segments(x0, y0, x0, y0+r, lwd=lwd)
-segments(x0, y0, x0-r, y0, lwd=lwd)
-text(x0-r+d, y0+d*3, "verify", adj=c(0, 0.5), cex=text_cex)
+for(i in 1:5) {
+    roundedRect(x[i], y[i], x[i]+w[i], y[i]+h[i],
+                round=rounding, lwd=lwd, border=colors[i])
+    text(x[i]+w[i]/2, y[i]+h[i]/2, text[i], cex=text_cex, col=colors[i])
 
-x0 <- d; y0 <- -d
-lines(r*cos(z+3*pi/2)+x0, r*sin(z+3*pi/2)+y0, lwd=lwd)
-segments(x0, y0, x0+r, y0, lwd=lwd)
-segments(x0, y0, x0, y0-r, lwd=lwd)
-text(x0+r-d, y0-d*3, "document", adj=c(1, 0.5), cex=text_cex)
+}
 
-x0 <- -d; y0 <- -d
-lines(r*cos(z+pi)+x0, r*sin(z+pi)+y0, lwd=lwd)
-segments(x0, y0, x0, y0-r, lwd=lwd)
-segments(x0, y0, x0-r, y0, lwd=lwd)
-text(x0-r+d, y0-d*3, "explore", adj=c(0, 0.5), cex=text_cex)
 
 dev.off()
