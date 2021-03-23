@@ -1,6 +1,6 @@
 LEC = data_cleaning
 
-FIGS=
+FIGS= Figs/logo.pdf
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
@@ -12,13 +12,7 @@ docs/%.pdf: %.pdf
 $(LEC).pdf: $(LEC).tex header.tex $(FIGS)
 	xelatex $^
 
-Figs/gh_results_good.pdf: R/plot_gh_results.R
-	cd R;R CMD BATCH $(R_OPTS) $(<F)
-
-Figs/marshfield_map.png: R/wisconsin_map.R
-	cd R;R CMD BATCH $(R_OPTS) $(<F)
-
-Figs/sibpairs.pdf: R/plot_sibships.R
+Figs/logo.pdf: R/logo.R
 	cd R;R CMD BATCH $(R_OPTS) $(<F)
 
 $(LEC)_notes.pdf: $(LEC)_notes.tex header.tex $(FIGS)
