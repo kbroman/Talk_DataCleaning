@@ -38,15 +38,15 @@ dev.off()
 
 for(i in 1:5) {
 
-    pdf(paste0("../Figs/logo_", text[i], ".pdf"), height=2.5, width=ifelse(i==5, 10, 5), pointsize=14)
+    pdf(paste0("../Figs/logo_", text[i], ".pdf"), height=2.5, width=7, pointsize=18)
 
     par(mar=rep(0,4))
     plot(0,0,type="n", xlab="", ylab="", xaxt="n", yaxt="n",
-         xlim=c(0, ifelse(i==5, 2, 1)*(width + gap)),
+         xlim=c(0, width + gap),
          ylim=c(0, height + gap),
          bty="n", xaxs="i", yaxs="i")
 
-    w <- ifelse(i==5, width*2+gap, width)
+    w <- width
     h <- height
     x <- gap*0.5
     y <- gap*0.5
