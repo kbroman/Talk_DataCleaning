@@ -1,6 +1,6 @@
 fundamentals
 1. Don't clean data when tired or hungry
-2. Think about what might have gone wrong
+2. Think about what might have gone wrong and how it might be revealed
 3. Don’t trust anyone (even yourself)
 4. Use care in merging: Focus on labels not position
 5. Dates and categories suck
