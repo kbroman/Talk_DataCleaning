@@ -20,7 +20,7 @@ Figs/%.pdf: R/%.R
 
 $(LEC)_notes.pdf: $(LEC)_notes.tex header.tex $(FIGS)
 	xelatex $<
-	pdfnup $@ --nup 1x2 --paper letterpaper --frame true --scale 0.9
+	pdfnup $@ --nup 1x2 --no-landscape --paper letterpaper --frame true --scale 0.9
 	mv $(LEC)_notes-nup.pdf $@
 
 $(LEC)_notes.tex: $(LEC).tex Ruby/createVersionWithNotes.rb
