@@ -41,6 +41,11 @@ But also
 
 ---
 
+my motto is "trust no one" … except maybe @kwbroman?
+https://twitter.com/JennyBryan/status/595689693162938368
+
+---
+
 DataMishaps Night
 - more than half of mishaps were a data cleaning or data merge problem
 - we all really can identify with each other’s data cleaning problems
