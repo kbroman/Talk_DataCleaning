@@ -1,7 +1,7 @@
 fundamentals
 1. Don't clean data when tired or hungry
-2. Think about what might have gone wrong and how it might be revealed
-3. Don’t trust anyone (even yourself)
+2. Don’t trust anyone (even yourself)
+3. Think about what might have gone wrong and how it might be revealed
 4. Use care in merging: Focus on labels not position
 5. Dates and categories suck
 
@@ -13,9 +13,9 @@ verify
 
 explore
 10. Plot stuff: vs time, and scatterplots
-11. Look at missing data patterns
-12. Look for outliers
-13. There will always be typos
+11. Look for outliers
+12. Look at missing data patterns
+13. With massive datasets, make more plots not fewer
 
 confer
 14. Don’t be shy about asking questions
