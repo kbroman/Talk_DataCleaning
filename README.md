@@ -2,8 +2,11 @@
 
 Proposed talk for [csv,conf,v6](https://csvconf.com/).
 
+- [slides pdf](https://kbroman.org/Talk_DataCleaning/data_cleaning.pdf)
+- [slides pdf with notes](https://kbroman.org/Talk_DataCleaning/data_cleaning_notes.pdf)
 
-## Required packages
+
+## Required R packages
 
 - [berryFunctions](https://cran.r-project.org/package=berryFunctions)
 - [broman](https://cran.r-project.org/package=broman)
