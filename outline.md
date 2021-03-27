@@ -112,7 +112,7 @@ what is a principle?
 Split principles into four groups:
 - verify
 - explore
-- confer (or collaborate)
+- ask
 - document
 
 would be nice to have balance, like 4 groups of 4 things, or 4 groups

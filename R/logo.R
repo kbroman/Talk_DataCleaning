@@ -1,4 +1,4 @@
-# make logo of rounded rectangles with "fundamentals", "verify", "explore", "confer", "document"
+# make logo of rounded rectangles with "fundamentals", "verify", "explore", "ask", "document"
 library(berryFunctions)
 library(broman)
 
@@ -9,7 +9,7 @@ lwd <- 5
 text_cex <- 4
 rounding <- 0.2
 
-text <- c("verify", "explore", "confer", "document", "fundamentals")
+text <- c("verify", "explore", "ask", "document", "fundamentals")
 colors <- brocolors("web")[c("blue", "green", "orange", "purple", "black")]
 
 pdf("../Figs/logo.pdf", height=7.5, width=10, pointsize=14)

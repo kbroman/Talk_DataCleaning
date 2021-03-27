@@ -17,7 +17,7 @@ explore
 12. Look at missing data patterns
 13. With massive datasets, make more plots not fewer
 
-confer
+ask
 14. Don’t be shy about asking questions
 15. Ask for the primary data
 16. Ask for metadata
