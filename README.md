@@ -1,6 +1,6 @@
 # Data cleaning principles
 
-Proposed talk for [csv,conf,v6](https://csvconf.com/).
+Slides for a talk for [csv,conf,v6](https://csvconf.com/), May 4-5, 2021.
 
 - [slides pdf](https://kbroman.org/Talk_DataCleaning/data_cleaning.pdf)
 - [slides pdf with notes](https://kbroman.org/Talk_DataCleaning/data_cleaning_notes.pdf)
