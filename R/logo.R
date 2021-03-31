@@ -10,7 +10,9 @@ text_cex <- 4
 rounding <- 0.2
 
 text <- c("verify", "explore", "ask", "document", "fundamentals")
-colors <- brocolors("web")[c("blue", "green", "orange", "purple", "black")]
+colors <- rgb(c(  0,  26, 225, 17, 122),
+              c(106, 154, 103, 17,   0),
+              c(207,  34,  27, 17, 128), maxColorValue=255) # ("blue", "green", "orange", "black", "purple")
 
 pdf("../Figs/logo.pdf", height=7.5, width=10, pointsize=14)
 
