@@ -11,7 +11,7 @@ if(!file.exists(csvfile)) {
         url <- "https://phenomedoc.jax.org/QTL_Archive/attie_2015/Attie_2015_eqtl_raw.zip"
         file <- basename(url)
         if(!file.exists(file)) download.file(url, file)
-        unzip(file, csvfile)
+        unzip(file, paste0("Raw/", csvfile), junkpaths=TRUE)
     }
 }
 
