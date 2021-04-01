@@ -25,7 +25,7 @@ plot(0,0,type="n", xlab="", ylab="", xaxt="n", yaxt="n",
 w <- c(rep(width, 4), width*2+gap)
 h <- rep(height, 5)
 x <- c(rep(c(gap*0.5, gap*1.5 + width), 2), gap*0.5)
-y <- c(rep(2*height + gap*2.5, 2), rep(height+gap*1.5, 2), gap*0.5)
+y <- c(rep(height + gap*1.5, 2), rep(gap*0.5, 2), 2*height+ gap*2.5)
 
 for(i in 1:5) {
     roundedRect(x[i], y[i], x[i]+w[i], y[i]+h[i],
