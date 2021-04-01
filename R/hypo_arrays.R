@@ -6,7 +6,7 @@ library(data.table)
 csvfile <- "hypo_mlratio_raw.csv"
 if(!file.exists(csvfile)) {
     gzfile <- paste0(csvfile, ".gz")
-    if(file.exists(gzfile)) system(paste("gunzip", gzfile))
+    if(file.exists(gzfile)) system(paste("gunzip -k", gzfile))
     else {
         url <- "https://phenomedoc.jax.org/QTL_Archive/attie_2015/Attie_2015_eqtl_raw.zip"
         file <- basename(url)
@@ -30,8 +30,8 @@ iqr <- function(a) diff(quantile(a, c(0.25, 0.75), na.rm=TRUE))
 med <- apply(hypo, 2, median, na.rm=TRUE)
 iqr_val <- apply(hypo, 2, iqr)
 
-invis_gray <- rgb(0.5,0.5,0.5,0.2)
-invis_blue <- rgb(0.1,0.1,0.5,0.2)
+invis_gray <- rgb(0.5, 0.5,   0.5,   0.2)
+invis_blue <- rgb(0.0, 0.453, 0.848, 0.2)
 
 pdf("../Figs/hypo_arrays.pdf", height=5, width=10)
 par(mar=c(3.1, 0.6, 0.6, 0.6))
