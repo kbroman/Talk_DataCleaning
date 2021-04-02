@@ -38,7 +38,7 @@
 
   \note{
     These are slides for a talk for the csv,conf,v6 ({\tt
-    https://csvconf.com/}) on May 4-5, 2021.
+    https://csvconf.com/}) on May 4--5, 2021.
 
     Data analysts spend a lot of time organizing and cleaning data,
     but few of us have been trained to do so. Why is that?
@@ -75,9 +75,9 @@ is messy in its own way.
 
   But {\hilit is} every messy dataset {\vhilit uniquely} messy?
 
-  For sure, my collaborators have shown impressive creativity in their
-  organization and management of data. But we do see the same sorts of
-  problems over and over.
+  For sure, many my collaborators have shown impressive creativity in
+  their approach to organizing and managing data. But we do see
+  many of the same sorts of problems over and over.
 }
 \end{frame}
 
@@ -107,7 +107,7 @@ apply to the processing of RNA-seq data?
   But my answer to his question is {\vhilit absolutely!}
 
   A person with experience cleaning one dataset has important
-  experience to draw upon when moving to another dataset even if it's
+  experience to draw upon when moving to another dataset, even if it's
   of a totally different nature.
 }
 \end{frame}
@@ -128,14 +128,13 @@ apply to the processing of RNA-seq data?
   \end{minipage}
 
 \note{
-  In February, 2021, Caitlin Hudon and Laura Ellis organized an
+  In February, 2021, Caitlin Hudon and Laura Ellis organized a
   Friday evening conference where 16 people gave short presentations on data
   mishaps.
 
-  Many of the stories concerned mistakes in data cleaning, and while these
-  weren't necessarily the most amusing stories, they did seem to
-  bring out a strong sense of shared experience. We have suffered
-  and struggled through very similar data problems.
+  Many of the stories concerned mistakes in data cleaning, and these
+  seemed to bring out a strong sense of shared experience. We have
+  suffered and struggled through very similar data problems.
 }
 \end{frame}
 
@@ -253,6 +252,12 @@ apply to the processing of RNA-seq data?
 }
 
 \note{
+   Next: don't trust anyone. Even if the initial data cleaning was
+   done by someone you respect, you should double-check things that
+   they may have missed. And data cleaning is an ongoing process.
+
+   Jenny Bryan's tweet is among the nicest things anyone has said
+   about me.
 }
 \end{frame}
 
@@ -276,7 +281,17 @@ apply to the processing of RNA-seq data?
   Personally, I think this is the most important principle for data
   cleaning. It has been central in guiding my approach.
 
-  I need a good figure for this.
+  The figure here is an illustration of the most startingly result
+  I've had in data cleaning: a genetics project where 25\% of the
+  DNA samples had been mislabelled. The samples were arranged in wells
+  in 8$\times$12 plates; four of the six plates are shown here. The
+  dots indicate the correct DNA was placed in the well, but the arrows
+  point from where a sample should have been to where it actually was
+  placed.
+
+  I ultimately came to this finding by thinking about what might have
+  gone wrong in the project, checking for particularly problems, and
+  then following the trail of evidence to this mess.
 }
 \end{frame}
 
