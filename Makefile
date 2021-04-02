@@ -8,7 +8,8 @@ FIGS= Figs/logo.pdf \
 	  Figs/spreadsheet_g_v_mg.pdf \
 	  Figs/logo_withtext.pdf \
 	  Figs/scatter_na.pdf \
-	  Figs/hypo_arrays.pdf
+	  Figs/hypo_arrays.pdf \
+	  Figs/dup_ids.pdf
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
