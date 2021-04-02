@@ -9,7 +9,8 @@ FIGS= Figs/logo.pdf \
 	  Figs/logo_withtext.pdf \
 	  Figs/scatter_na.pdf \
 	  Figs/hypo_arrays.pdf \
-	  Figs/dup_ids.pdf
+	  Figs/dup_ids.pdf \
+	  Figs/mismatch.pdf
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
