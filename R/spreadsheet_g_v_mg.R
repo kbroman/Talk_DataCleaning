@@ -1,6 +1,6 @@
 library(broman)
 
-hilit_color <- "#ff0080"
+hilit_color <- "#ff00c0"
 
 # a few values in g where the rest are in mg
 

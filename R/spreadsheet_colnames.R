@@ -1,8 +1,6 @@
 # spreadsheet examples related to "everything with a script"
 library(broman)
 
-hilit_color <- "#ff0080"
-
 mat1 <- cbind(id=paste0("DO-", 221:230),
               "glucose.0"=
               c(145.742786, 138.010378, 138.219362, 100.445504, 121.030428,
