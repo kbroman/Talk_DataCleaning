@@ -10,6 +10,21 @@ Slides for a talk for [csv,conf,v6](https://csvconf.com/), May 4-5, 2021.
 
 - [berryFunctions](https://cran.r-project.org/package=berryFunctions)
 - [broman](https://cran.r-project.org/package=broman)
+- [ggplot2](https://ggplot2.tidyverse.org/)
+- [data.table](https://rdatatable.gitlab.io/data.table/)
+- [visdat](https://docs.ropensci.org/visdat/)
+- [naniar](http://naniar.njtierney.com/)
+- [cowplot](https://wilkelab.org/cowplot/)
+
+## pdfnup
+
+Building the notes version of the slides needs `pdfnup`, which is a
+bit complicated to obtain.
+
+Previously it was available via [texlive](https://tug.org/texlive/),
+but now I need to use [pdfjam](https://github.com/rrthomas/pdfjam)
+plus the pdfnup script in the [pdfjam
+extras](https://github.com/rrthomas/pdfjam-extras>).
 
 
 ## License
