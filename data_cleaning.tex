@@ -407,6 +407,12 @@ apply to the processing of RNA-seq data?
 
 
 \note{
+   The nature major section concerns that you should go through and
+   {\nhilit verify} all of the things that you know should be true.
+
+   First up: are the variables that are supposed to have distinct
+   values really showing distinct values? Here, there are a pair of
+   individual identifiers that are duplicated.
 }
 \end{frame}
 
@@ -431,6 +437,12 @@ apply to the processing of RNA-seq data?
 
 
 \note{
+    Next, are the things that are supposed to match actually matching?
+    This often concerns data that are repeated in multiple data files.
+    For example, you might have body weight included multiple times;
+    are individuals' weights the same in all files? Here, there's a
+    column for ``number of generations'' that shows an inconsistency
+    between two files.
 }
 \end{frame}
 
@@ -447,6 +459,18 @@ apply to the processing of RNA-seq data?
 \figh{Figs/check_calculations.pdf}{0.72}
 
 \note{
+    Any time there is a calculation, you should verify the values.
+    This is useful both for ensuring that you understand the
+    calculation, and you also have the chance to reduce round-off
+    error (though that seldom matters). Occasionally you may see
+    mistakes.
+
+    Here, I'm plotting HOMA-IR which is the product of blood glucose
+    and blood insulin; the values in the data on the x-axis and the
+    values I calculated on the y-axis. It's often better to look at the
+    differences directly; in the right panel I plot the differences on
+    the y-axis. It appears that there is a batch of individuals that
+    whose values were rounded more coarsely.
 }
 \end{frame}
 
@@ -463,6 +487,8 @@ apply to the processing of RNA-seq data?
 {\princolorB 9. Look for other instances of a problem}
 
 \note{
+    As with software testing, any time you find a problem, be sure to
+    look for other instances of that problem.
 }
 \end{frame}
 
