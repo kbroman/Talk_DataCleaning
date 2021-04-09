@@ -29,10 +29,10 @@ x <- c(rep(c(gap*0.5, gap*1.5 + width), 2), gap*0.5)
 y <- c(rep(height + gap*1.5, 2), rep(gap*0.5, 2), 2*height+ gap*2.5)
 
 principles <- list(
-    c("  6. Distinct things are distinct",
-      "  7. Matching things match",
+    c("  6. Verify that distinct things are distinct",
+      "  7. Verify that matching things match",
       "  8. Check calculations",
-      "  9. Look for other instances"),
+      "  9. Look for other instances of problems"),
     c("10. Make lots of plots",
       "11. Look at missing value patterns",
       "12. With big data make more plots",
@@ -57,7 +57,7 @@ for(i in 1:5) {
     text(x[i]+w[1]*0.05, y[i]+h[i]*0.87, text[i], cex=header_cex, col=colors[i], adj=c(0, 0.5))
 
     for(j in seq_along(principles[[i]]))
-        text(x[i]+w[1]*0.12, y[i]+h[i]*0.7 - h[i]*0.15*(j-1) - ifelse(i<5, h[i]*0.05, 0),
+        text(x[i]+w[1]*0.07, y[i]+h[i]*0.7 - h[i]*0.15*(j-1) - ifelse(i<5, h[i]*0.05, 0),
              principles[[i]][[j]], cex=text_cex, col=colors[i], adj=c(0, 0.5))
 
 }
