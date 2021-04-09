@@ -509,6 +509,19 @@ apply to the processing of RNA-seq data?
 
 
 \note{
+    A particularly important aspect of data cleaning concerns just
+    exploring the data to identify potential problems. And a
+    particularly important aspect of that exploration is to just make
+    lots of plots.
+
+    Plot variables over time or by subject ID, which may indicate
+    things like batch effects.
+
+    Make scatterplots of variables against each other, looking
+    particularly for outliers. Outliers could be real biological
+    variation, but they could also be data entry problems, like a pair
+    of numbers being swapped, or the weights entered in grams rather
+    than milligrams.
 }
 \end{frame}
 
@@ -524,6 +537,11 @@ apply to the processing of RNA-seq data?
 \figh{Figs/scatter_na.pdf}{0.8}
 
 \note{
+    The pattern of missing data can be particularly informative about
+    problems. Two particularly useful tools are the R packages
+    \{visdat\} and \{naniar\}. The latter provides scatterplots that
+    include the cases that are missing one or both variables.
+
 visdat: https://docs.ropensci.org/visdat/
 
 naniar: http://naniar.njtierney.com/
