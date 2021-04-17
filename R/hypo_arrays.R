@@ -22,8 +22,8 @@ hypo <- t(hypo[-1,-1])
 
 
 # estimate densities
-x <- seq(-2, 2, length=201)
-d <- apply(hypo, 2, function(a) density(a[!is.na(a)], from=-2, to=2, n=201)$y)
+x <- seq(-0.2, 0.5, len=401)
+d <- apply(hypo, 2, function(a) density(a[!is.na(a)], from=-0.2, to=0.5, n=401)$y)
 
 # median and iqr
 iqr <- function(a) diff(quantile(a, c(0.25, 0.75), na.rm=TRUE))
@@ -35,15 +35,15 @@ invis_blue <- rgb(0.0, 0.453, 0.848, 0.2)
 
 pdf("../Figs/hypo_arrays.pdf", height=5, width=10)
 par(mar=c(3.1, 0.6, 0.6, 0.6))
-grayplot(x, d[,1], xlab="Gene expression", ylab="", yat=NA, ylim=c(0, max(d)),
-         type="n", xlim=c(-0.2, 0.5))
+grayplot(x, d[,1], xlab="Gene expression", ylab="", yat=NA, ylim=c(0, max(d)*1.03),
+         type="n", xlim=c(-0.2, 0.5), yaxs="i")
 for(i in 1:ncol(d)) lines(x, d[,i], col=invis_gray)
 dev.off()
 
 pdf("../Figs/hypo_arrays_hilit.pdf", height=5, width=10)
 par(mar=c(3.1, 0.6, 0.6, 0.6))
-grayplot(x, d[,1], xlab="Gene expression", ylab="", yat=NA, ylim=c(0, max(d)),
-         type="n", xlim=c(-0.2, 0.5))
+grayplot(x, d[,1], xlab="Gene expression", ylab="", yat=NA, ylim=c(0, max(d)*1.03),
+         type="n", xlim=c(-0.2, 0.5), yaxs="i")
 o <- order(med, decreasing=TRUE)
 for(i in o[-(1:120)]) lines(x, d[,i], col=invis_gray)
 for(i in o[1:120]) lines(x, d[,i], col=invis_blue)
