@@ -5,7 +5,6 @@ FIGS= Figs/logo.pdf \
 	  Figs/il3.pdf \
 	  Figs/body_weight.pdf \
 	  Figs/spreadsheet_colnames.pdf \
-	  Figs/spreadsheet_g_v_mg.pdf \
 	  Figs/logo_withtext.pdf \
 	  Figs/scatter_na.pdf \
 	  Figs/hypo_arrays.pdf \
