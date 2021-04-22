@@ -36,14 +36,14 @@ invis_blue <- rgb(0.0, 0.453, 0.848, 0.2)
 pdf("../Figs/hypo_arrays.pdf", height=5, width=10)
 par(mar=c(3.1, 0.6, 0.6, 0.6))
 grayplot(x, d[,1], xlab="Gene expression", ylab="", yat=NA, ylim=c(0, max(d)*1.03),
-         type="n", xlim=c(-0.2, 0.5), yaxs="i")
+         type="n", xlim=c(-0.2, 0.5), yaxs="i", xaxs="i")
 for(i in 1:ncol(d)) lines(x, d[,i], col=invis_gray)
 dev.off()
 
 pdf("../Figs/hypo_arrays_hilit.pdf", height=5, width=10)
 par(mar=c(3.1, 0.6, 0.6, 0.6))
 grayplot(x, d[,1], xlab="Gene expression", ylab="", yat=NA, ylim=c(0, max(d)*1.03),
-         type="n", xlim=c(-0.2, 0.5), yaxs="i")
+         type="n", xlim=c(-0.2, 0.5), yaxs="i", xaxs="i")
 o <- order(med, decreasing=TRUE)
 for(i in o[-(1:120)]) lines(x, d[,i], col=invis_gray)
 for(i in o[1:120]) lines(x, d[,i], col=invis_blue)
