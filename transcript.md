@@ -44,4 +44,69 @@
    I've split them up into 5 parts: some fundamental ideas, plus
    the four main pieces: verify, explore, ask, and document.
 
-7.
+7. So let's start with some fundamental principles, and the first is
+   don't clean data when you're tired or hungry.
+   Ghazal Gulati said this at the Data Mishaps Night, and it's so true.
+   Data cleaning takes time and intense concentration, so grab a
+   snickers and a coffee before you begin.
+
+8. Second, don't trust anyone, even yourself. Maybe you respect
+   compiled the data; maybe it was you three months ago. Still, you
+   should double-check.
+
+   Jenny Bryan once tweeted "my motto is trust no one except maybe
+   kwbroman", which may be the nicest thing anyone has said about me.
+   But still, don't trust him either.
+
+9. The central principle for me is: think about what might have gone
+   wrong and how it might be revealed.
+
+   The illustration here is of the most dramatic data cleaning success
+   I've had: a genetics study with almost 20% sample mix-ups. The DNA
+   samples were arrayed in 8x12 plates; a dot here indicates the
+   correct sample was placed in the correct spot. An arrow points from
+   where a sample should have been to where it actually ended up.
+   There are some distant sample swaps, plus a big series of
+   off-by-one and off-by-two errors.
+
+   I came to this understanding of the sample mix-ups by first
+   thinking about what might have been and how it might be revealed.
+
+10. Fourth, use care when merging data sets. Many problems are due to
+    mistakes in merging files. For example, here the order of the
+    columns have been swapped. (Note that it's best to focus on the
+    labels rather than position, because changes in column orders are
+    common.)
+
+11. Fifth, dates and categories suck. Much of your efforts will be
+    focused on fixing typos and inconsistencies in dates and
+    categorical variables.
+
+    I know what you're thinking: how is that a principle? We're all
+    really in tune here, and I was thinking the same thing: what is a
+    principle? Are these principles or just random stuff related to
+    data cleaning?
+
+12. My working definition of principle is that it's a fundamental
+    truth that guides our thinking. That seems reasonable.
+
+13. And so "Dates and categories suck". Yeah, that's true, and it can
+    guide our thinking, so I think it's okay to view it as a
+    principle.
+
+    Dates and categories suck, and just be glad if you're not working
+    with time zones.
+
+14. Let's move to the next category of principles: "Verify". You first
+    want to verify that the distinct things are distinct. For example,
+    if you have a column of sample identifiers, are there any
+    duplicates? In this example, I found a pair of samples with the
+    sample ID but different other data.
+
+15. Next, check that things that are supposed to match actually do
+    match. For example, if the same data appear in duplicate in
+    multiple files, are they actually the same in all of the files?
+    Here, one sample had 22 for "number of generations" in one file
+    but 21 in a different file.
+
+16.
