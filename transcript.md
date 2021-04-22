@@ -127,8 +127,95 @@
     there's a group of values that are all missing, which are maybe
     are the values where the derived value was missing but shouldn't
     have been.
-    
+
 17. Finally, for this section, when you find a problem be sure to look
     for other instances of that problem. This is just like debugging
     software: if you find a bug, look to see if you've made the same
     mistake elsewhere.
+
+18. Having verified the things that were supposed to be true about the
+    data, you now what to do some further explorations for potential
+    problems.
+
+    A key principle is to make lots of plots.
+
+    Plot things against time or index, which can show batch effects.
+
+    Make scatterplots, which can help to identify outliers. For
+    example one mouse gained a lot of weight and another mouse lost a
+    lot of weight; turns out they were right next to each other and
+    they just got transposed.
+
+    Outliers are the main thing to look for: here a group of values
+    were recorded in grams rather than milligrams. There are some odd
+    batch effects here too, though: first 150 values are a bit higher,
+    but a group in the 320-350 range that look high.
+
+19. It can be particularly useful to look at the pattern of missing
+    data. The R package {visdat} includes a heatmap of where the
+    missing values are, and the package {naniar} can make scatterplots
+    that highlight rather than omit the missing values.
+
+20. With massive datasets, you should be making more plots rather than
+    fewer.
+
+    There's a tendency to say "I can't look at 500 histograms, so I'll
+    look at none. But you actually *can* look at 500 histograms. You can
+    put 25 or 50 on a page and flip through a long PDF, or you can
+    superimpose 500 density estimates.
+
+    It can be helpful to highlight a portion, like those that are most
+    variable.
+
+    I also like to make a scatterplot of a couple of summary
+    statistics, like the SD versus the mean, or here the
+    inter-quartile range versus the median. This indicates a cluster
+    of samples that are badly behaved.
+
+    It's also worthwhile to rethink our standard plots. This is the
+    equivalent of 500 box plots. The 500 samples have been sorted by
+    decreasing median, and the lines connect the quantiles: median,
+    25th and 75th percentiles, 10th and 90th, 5th and 95th, 1st and
+    99th. This shows that the first 120 or so samples are quite
+    different than the rest: elevated median and long lower tail,
+    versus being symmetric about 0.
+
+21. And a fundamental principle here is to follow up all artifacts
+    that you see.
+
+    This is a heat map of a correlation matrix. My color choices were
+    questionable, but the key thing is the plaid pattern --- what the
+    hell is that? The thing is, I hadn't look at all of those plots
+    I'd just shown you, but when I saw this abomination I was like,
+    "What the hell? I'd better dig into this."
+
+22. I'm running out of time, so I'll do breeze through the final two
+    groups of principles.
+
+    Don't be afraid to ask questions. And ask for the primary data.
+    And ask for metadata (like, what the heck are these data?)
+    And above all, ask about the missing data: why are they missing,
+    how should they be treated, and do they indicate problems or
+    introduce bias?
+
+23. Finally, document what you've done: create checklists and
+    pipelines that capture what you've learned. And you're work needs
+    to be more than just reproducible, you need to capture the why as
+    well as the what. And data cleaning is not just a step but a
+    continual process that you'll need to return to as you dig deeper
+    into the data.
+
+24. So these are my suggestions for 20 data cleaning principles.
+    Some fundamental ideas, like trust noone, and then verify,
+    explore, ask, and document. Rearrange the sections to find a
+    suitable acronym, like F-DAVE.
+
+25. Allison Reichel tweeted "I will let the data speak for itself when
+    it clean itself." Reading that always brings me a bit of joy.
+
+    But it speaks to the point that data cleaning will always be a big
+    part of our work as data analysts. And actually, our time spent
+    cleaning data will probably just increase.
+
+26. Thanks for having me. Here's where you can find these slides, and
+    me.
