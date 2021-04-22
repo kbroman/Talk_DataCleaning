@@ -109,4 +109,26 @@
     Here, one sample had 22 for "number of generations" in one file
     but 21 in a different file.
 
-16.
+16. Next, check any calculations. For example, this shows a comparison
+    between HOMA_IR in a datafile, and the calculated ratio of glucose
+    to insulin. This is useful both to verify that the calculated
+    values are correct and that your understanding of the calculation
+    is correct.
+
+    On the left, in the scatterplot of the re-calculated values versus
+    the provided values, I've separated out missing values. There are
+    some missing values that look like they don't need to be missing.
+
+    When you're looking for differences, it's often best to calculate
+    the differences and plot them. That's what's shown on the right.
+    The differences look like just rounding errors, but note that
+    there's a group of values that look to have been rounded more
+    coarsely. (This often looks like a copy-paste action.) Also,
+    there's a group of values that are all missing, which are maybe
+    are the values where the derived value was missing but shouldn't
+    have been.
+    
+17. Finally, for this section, when you find a problem be sure to look
+    for other instances of that problem. This is just like debugging
+    software: if you find a bug, look to see if you've made the same
+    mistake elsewhere.
