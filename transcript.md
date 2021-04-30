@@ -215,4 +215,5 @@
     part of our work as data analysts. Our time spent
     cleaning data will probably just continue to increase.
 
-26. Thanks for having me. Here's where you can find these slides, and me.
+26. Thanks for having me! Here's where you can find these slides,
+    and me.
