@@ -25,8 +25,9 @@
 
 4. One of the best things to happen in the pandemic was Data Mishaps
    Night. 16 people gave 5 min talks about mistakes they'd made with
-   data. Many concerned data cleaning, and there was a great closeness
-   through our shared experience and struggles with data.
+   data. Many concerned data cleaning, and I felt a great closeness
+   to the community through our shared experience and struggles with
+   data.
 
 5. I think we're not teaching data cleaning because it's tedious, the
    results are often embarrassing, it needs the context, and it often
@@ -39,13 +40,14 @@
    advanced programming skills. And it can have a huge effect on
    the results.
 
-6. So I'd like to propose a set of principles for data cleaning.
+6. I think there _are_ principles that underlie our data
+   cleaning work, and I'd like to propose a set.
    I've split them up into 5 parts: some fundamental ideas, plus
    the four main concepts: verify, explore, ask, and document.
 
 7. The first fundamental principle is:
    don't clean data when you're tired or hungry.
-   Ghazal Gulati said this at the Data Mishaps Night, and it's so true.
+   Ghazal Gulati said this at the Data Mishaps Night, and it's right on.
    Data cleaning takes time and intense concentration, so grab a
    snickers and a cup of coffee before you begin.
 
@@ -60,15 +62,15 @@
 9. The central principle for me is: think about what might have gone
    wrong and how it might be revealed.
 
-   The illustration here is of the most dramatic data cleaning successes
+   The illustration here is of the most dramatic data cleaning success
    I've had: a genetics study with almost 20% sample mix-ups. The DNA
-   samples were arranged in an 8x12 format; a dot here indicates the
+   samples were arranged in 8x12 grids; a dot here indicates the
    correct sample was placed in the correct spot. An arrow points from
    where a sample should have been to where it actually ended up.
    There are some distant sample swaps, plus a big series of
    off-by-one and off-by-two errors.
 
-   I came to identify these sample mix-ups by first thinking
+   I came to identify these sample mix-ups by following this principle: think
    about what might have happened and how it might be revealed.
 
 10. Fourth, use care when merging data sets. Many problems are due to
@@ -106,20 +108,20 @@
     Here, one sample had 22 for "number of generations" in one file
     but 21 in a different file.
 
-16. Next, check any calculations. For example, these plots show a
-    comparison between HOMA_IR in a datafile and the calculated
-    ratio of glucose to insulin. This is useful both to verify that
-    the calculated values are correct and that your understanding
-    of the calculation is correct.
+16. Next, check any calculations. For example, HOMA_IR is the ratio
+    of serum glucose to insulin. On the left I plot the values from a
+    data file on the x-axis and my recalculated values on the y-axis.
+    This is useful both to check for errors and to check our understanding
+    of the calculation.
 
-    On the left, in the scatterplot of the re-calculated values versus
-    the provided values, I've separated out missing values. There are
-    some missing values that look like they don't need to be missing.
+    The results look the same, but note that I've separated out missing
+    values, and there are some values that are missing but maybe shouldn't
+    be.
 
-    When you're looking for differences, it's often best to calculate
-    the differences and plot them. That's what's shown on the right.
-    The differences look like rounding errors, but note that
-    there's a group of values that look to have been rounded more
+    When you're looking for differences, it's often best to plot the
+    differences directly.
+    They look like just rounding errors, but note that
+    there's a group of values that have been rounded more
     coarsely. (This often looks like a copy-paste action.) Also,
     there's a group of values that are all missing, which are maybe
     the ones where the derived value was missing but shouldn't
@@ -182,7 +184,7 @@
     that you see.
 
     This is a heat map of a correlation matrix, with questionable
-    color choices and an odd plain pattern. If you see this sort
+    color choices and an odd plaid pattern. If you see this sort
     of abomination, you should figure out what's going on.
 
 22. I'm running out of time, so I'll breeze through the final two
