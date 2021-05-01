@@ -10,4 +10,7 @@ after[25:26] <- after[26:25]
 grayplot(before, after,
          xlab="6 wk body weight (g)",
          ylab="10 wk body weight (g)")
+d <- 0.3
+text(before[25]+d, after[25], "25", adj=c(0, 0.5), col="green4", cex=1.5)
+text(before[26]-d, after[26], "26", adj=c(1, 0.5), col="green4", cex=1.5)
 dev.off()
