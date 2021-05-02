@@ -1,8 +1,9 @@
 ## Draft transcript
 
-1. Data analysts spend a lot of time cleaning data, but few of us have
-   had any formal training in that aspect of our work. Why is that?
-   Some say data cleaning is difficult to generalize.
+1. I'm an applied statistician working mostly in genetics.
+   I spend a lot of time cleaning data. Have any of us had
+   formal training in data cleaning?
+   Some say that's because it is difficult to generalize.
 
 2. Hadley Wickham wrote, "Tidy data are all alike, but every messy
    dataset is messy in its own way." Now, he was talking about data
@@ -20,14 +21,17 @@
    My response is: **absolutely**!
 
    The context certainly matters, but cleaning one dataset provides
-   useful experience when confronting the next one, even it's from
-   a completely different discipline.
+   really useful experience for the next one, even it's from
+   a completely different field.
 
 4. One of the best things to happen in the pandemic was Data Mishaps
    Night. 16 people gave 5 min talks about mistakes they'd made with
    data. Many concerned data cleaning, and I felt a great closeness
    to the community through our shared experience and struggles with
    data.
+
+   Our data cleaning efforts may actually be more similar than the
+   later analyses.
 
 5. I think we're not teaching data cleaning because it's tedious, the
    results are often embarrassing, it needs the context, and it often
@@ -70,8 +74,9 @@
    There are some distant sample swaps, plus a big series of
    off-by-one and off-by-two errors.
 
-   I came to identify these sample mix-ups by following this principle: think
-   about what might have happened and how it might be revealed.
+   I came to identify these sample mix-ups by following this basic
+   principle: think about what might have gone wrong and how it might
+   be revealed.
 
 10. Fourth, use care when merging data sets. Many problems are due to
     mistakes in merging files. Here, the order of the
@@ -109,16 +114,15 @@
     but 21 in a different file.
 
 16. Next, check any calculations. For example, HOMA_IR is the ratio
-    of serum glucose to insulin. On the left I plot the values from a
-    data file on the x-axis and my recalculated values on the y-axis.
-    This is useful both to check for errors and to check our understanding
-    of the calculation.
+    of serum glucose to insulin. And so we can re-calculate it and
+    compare it to what's provided. This is useful both to check for
+    errors and to check our understanding of the calculation.
 
     The results look the same, but note that I've separated out missing
     values, and there are some values that are missing but maybe shouldn't
     be.
 
-    When you're looking for differences, it's often best to plot the
+    When you're looking for differences, it's good to plot the
     differences directly.
     They look like just rounding errors, but note that
     there's a group of values that have been rounded more
@@ -198,22 +202,20 @@
 
 23. Finally, document what you've done: create checklists and
     pipelines that capture what you've learned. And your work needs to
-    be more than just reproducible, you need to capture the _why_ as
-    well as the _what_. And data cleaning is not a step in the
-    analysis sequence but a continual process that you'll need to
+    be more than just reproducible, you need to capture not just
+    _what_ you did but _why_ you did it.
+    And data cleaning is not just step in the analysis
+    but a continual process that you'll need to
     return to as you dig deeper into the data.
 
 24. So these are my suggestions for 20 data cleaning principles.
     Some fundamental ideas, like "trust no one", and then verify,
-    explore, ask, and document. Rearrange the sections to find a
-    suitable acronym, like um F-DAVE.
+    explore, ask, and document.
 
 25. Allison Reichel tweeted "I will let the data speak for itself when
-    it clean itself." Reading that always brings me a bit of joy.
+    it cleans itself." Reading that always brings me jolt of joy.
 
-    And she speaks to the point that data cleaning will always be a big
-    part of our work as data analysts. Our time spent
-    cleaning data will probably just continue to increase.
+    Data cleaning will always be a big part of our work.
 
 26. Thanks for having me! Here's where you can find these slides,
     and me.
