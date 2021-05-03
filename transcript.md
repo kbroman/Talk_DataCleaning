@@ -213,7 +213,7 @@
     explore, ask, and document.
 
 25. Allison Reichel tweeted "I will let the data speak for itself when
-    it cleans itself." Reading that always brings me jolt of joy.
+    it cleans itself." Reading that always brings me a jolt of joy.
 
     Data cleaning will always be a big part of our work.
 
