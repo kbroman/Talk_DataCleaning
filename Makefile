@@ -14,10 +14,13 @@ FIGS= Figs/logo.pdf \
 
 R_OPTS=--no-save --no-restore --no-init-file --no-site-file
 
-all: docs/$(LEC).pdf docs/$(LEC)_notes.pdf
+all: docs/$(LEC).pdf docs/$(LEC)_notes.pdf docs/data_cleaning_principles.pdf
 
 docs/%.pdf: %.pdf
 	cp $^ $@
+
+docs/data_cleaning_principles.pdf: $(LEC).pdf
+	pdftk $< cat 31 output $@
 
 $(LEC).pdf: $(LEC).tex header.tex $(FIGS)
 	xelatex $^
