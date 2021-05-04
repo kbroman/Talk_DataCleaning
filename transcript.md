@@ -30,8 +30,7 @@
    to the community through our shared experience and struggles with
    data.
 
-   Our data cleaning efforts may actually be more similar than the
-   later analyses.
+   We may actually share more in common in our data cleaning efforts than in the rest of our work.
 
 5. I think we're not teaching data cleaning because it's tedious, the
    results are often embarrassing, it needs the context, and it often
