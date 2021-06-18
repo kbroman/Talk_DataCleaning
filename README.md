@@ -6,6 +6,8 @@ Slides for a talk for [csv,conf,v6](https://csvconf.com/), May 4-5, 2021.
 - [slides pdf with notes](https://kbroman.org/Talk_DataCleaning/data_cleaning_notes.pdf)
 - [draft transcript](transcript.md)
 - [summary slide (pdf)](https://kbroman.org/Talk_DataCleaning/data_cleaning_principles.pdf)
+- [video](https://www.youtube.com/watch?v=7Ma8WIDinDc)
+
 
 ## Required R packages
 
