@@ -9,6 +9,16 @@ Slides for a talk for [csv,conf,v6](https://csvconf.com/), May 4-5, 2021.
 - [video](https://www.youtube.com/watch?v=7Ma8WIDinDc)
 
 
+I gave a slighting longer version
+for the [Computation and Informatics in Biology and
+Medicine](https://cibm.wisc.edu) program at UW-Madison on 2023-03-21.
+
+- [github repository](https://github.com/kbroman/Talk_DataCleaning2023)
+- [slides pdf](https://kbroman.org/Talk_DataCleaning2023/data_cleaning.pdf)
+- [slides pdf with notes](https://kbroman.org/Talk_DataCleaning2023/data_cleaning_notes.pdf)
+
+
+
 ## Required R packages
 
 - [berryFunctions](https://cran.r-project.org/package=berryFunctions)
