@@ -6,14 +6,13 @@
    Some say that's because it is difficult to generalize.
 
 2. Hadley Wickham wrote, "Tidy data are all alike, but every messy
-   dataset is messy in its own way." Now, he was talking about data
-   structure rather than cleaning...
+   dataset is messy in its own way."
 
-   But _is_ every messy dataset _uniquely_ messy?
+   But is that really true?
+   _Is_ every messy dataset _uniquely_ messy?
 
-   My collaborators do show impressive creativity in their
-   data handling. But we also see many of the same problems,
-   repeatedly.
+   My collaborators can be really creative in data handling.
+   But we see many of the same problems, repeatedly.
 
 3. Roger Peng asked "If I clean up Medicare data, does any of the
    knowledge I gain apply to the processing of RNA-seq data?"
@@ -25,12 +24,14 @@
    a completely different field.
 
 4. One of the best things to happen in the pandemic was Data Mishaps
-   Night. 16 people gave 5 min talks about mistakes they'd made with
-   data. Many concerned data cleaning, and I felt a great closeness
-   to the community through our shared experience and struggles with
+   Night, an online meeting with a bunch of 5 min talks about mistakes with
    data.
 
-   We may actually share more in common in our data cleaning efforts than in the rest of our work.
+   Many concerned data cleaning and revealed a strong shared
+   experience in struggles with data.
+
+   Data analysts may actually share more in common in our data
+   cleaning efforts than in the rest of our work.
 
 5. I think data cleaning is not taught because it's tedious, the
    results are often embarrassing, it needs the context, and it often
@@ -216,5 +217,5 @@
 
     Data cleaning will always be a big part of our work.
 
-26. Thanks for having me! Here's where you can find these slides,
-    and me.
+26. Thanks for making it possible to present remotely!
+    Here's where you can find these slides, and me.
