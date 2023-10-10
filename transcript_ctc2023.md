@@ -113,7 +113,7 @@
     Here, one sample had 22 for "number of generations" in one file
     but 21 in a different file.
 
-16. Next, check any calculations. For example, HOMA_IR is the ratio
+16. Next, check any calculations. For example, HOMA_IR is the product
     of serum glucose to insulin. And so we can re-calculate it and
     compare it to what's provided. This is useful both to check for
     errors and to check our understanding of the calculation.
