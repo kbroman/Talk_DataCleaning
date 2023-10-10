@@ -53,7 +53,7 @@
    don't clean data when you're tired or hungry.
    Ghazal Gulati said this at the Data Mishaps Night, and it's right on.
    Data cleaning takes time and intense concentration, so grab a
-   snickers and a cup of coffee before you begin.
+   cup of coffee before you begin.
 
 8. Second, don't trust anyone, even yourself. Maybe a person you respect
    compiled the data; maybe it was you three months ago. Still, you
