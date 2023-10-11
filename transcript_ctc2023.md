@@ -175,15 +175,6 @@
     inter-quartile range versus the median. This indicates a cluster
     of samples that are unusual.
 
-    It's also worthwhile to rethink our standard plots. This is the
-    equivalent of 500 box plots, but going farther down in the tails
-    of the distributions. The 500 samples have been sorted to have
-    decreasing median, and the lines connect quantiles: median,
-    25th and 75th percentiles, 10th and 90th, 5th and 95th, 1st and
-    99th. This shows that while the bulk of distributions on are
-    symmetric about 0, the first 120 or so samples have elevated
-    median and long lower tail.
-
 21. And a fundamental principle here is to follow up all artifacts
     that you see.
 

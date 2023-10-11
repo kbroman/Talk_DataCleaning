@@ -586,9 +586,8 @@ apply to the processing of RNA-seq data?
 \vspace{0.10\textheight}
 
 \only<1|handout 0>{\figh{Figs/hypo_arrays.pdf}{0.70}}
-\only<2|handout 0>{\figh{Figs/hypo_arrays_hilit.pdf}{0.70}}
+\only<2>{\figh{Figs/hypo_arrays_hilit.pdf}{0.70}}
 \only<3|handout 0>{\figh{Figs/hypo_iqr_v_median.pdf}{0.70}}
-\only<4>{\figh{Figs/hypo_boxplots.pdf}{0.70}}
 
 
 \note{
@@ -601,15 +600,6 @@ apply to the processing of RNA-seq data?
   a bunch of density estimates, maybe highlighting some portion of
   them. You can also pull out a couple of summary statistics, such as
   the median and inter-quartile range.
-
-  Or here I'm looking at the equivalent of 500 boxplots. I sorted a
-  set of gene expression microarrays by their median, and then plotted
-  the median in blue, the 25th and 75th percentile in black, the 10th
-  and 90th in green, 5th and 95th in red, and 1st and 99th in purple.
-
-  With these data, it became apparent that there were 120 badly
-  behaved arrays, with median shifted to the right and with a long
-  left tail.
 }
 \end{frame}
 
