@@ -1,6 +1,6 @@
 ## Draft transcript
 
-1. As an applied statistician, I spend a lot of time cleaning data,
+1. I spend a lot of time cleaning data,
    and I think many of you do as well.
    But have any of us had formal training in data cleaning?
    Some say that's because it is difficult to generalize.
@@ -51,9 +51,9 @@
 
 7. The first fundamental principle is:
    don't clean data when you're tired or hungry.
-   Ghazal Gulati said this at the Data Mishaps Night, and it's right on.
+   Ghazal Gulati said this at Data Mishaps Night, and it's right on.
    Data cleaning takes time and intense concentration, so grab a
-   cup of coffee before you begin.
+   snack and a cup of coffee before you begin.
 
 8. Second, don't trust anyone, even yourself. Maybe a person you respect
    compiled the data; maybe it was you three months ago. Still, you
@@ -67,8 +67,10 @@
    wrong and how it might be revealed.
 
    The illustration here is of the most dramatic data cleaning success
-   I've had: a genetics study with almost 20% sample mix-ups. The DNA
-   samples were arranged in 8x12 grids; a dot here indicates the
+   I've had: many of you may remember this genetics study with
+   almost 20% sample mix-ups.
+
+   The DNA samples were on 8x12 plates; a dot here indicates the
    correct sample was placed in the correct spot. An arrow points from
    where a sample should have been to where it actually ended up.
    There are some distant sample swaps, plus a big series of
