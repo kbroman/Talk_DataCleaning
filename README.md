@@ -8,6 +8,7 @@ Slides for a talk for [csv,conf,v6](https://csvconf.com/), May 4-5, 2021.
 - [summary slide (pdf)](https://kbroman.org/Talk_DataCleaning/data_cleaning_principles.pdf)
 - [video](https://www.youtube.com/watch?v=7Ma8WIDinDc)
 
+It was revised slightly for the [Complex Trait Community meeting](https://complextrait.org/meetings/ctc-rg2023/) on 2023-10-11.
 
 I gave a slighting longer version
 for the [Computation and Informatics in Biology and
