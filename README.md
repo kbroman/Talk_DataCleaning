@@ -1,5 +1,7 @@
 # Data cleaning principles
 
+[![zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4737508.svg)(https://doi.org/10.5281/zenodo.4737508)
+
 Slides for a talk for [csv,conf,v6](https://csvconf.com/), May 4-5, 2021.
 
 - [slides pdf](https://kbroman.org/Talk_DataCleaning/data_cleaning.pdf)
