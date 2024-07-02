@@ -20,7 +20,7 @@ docs/%.pdf: %.pdf
 	cp $^ $@
 
 docs/data_cleaning_principles.pdf: $(LEC).pdf
-	pdftk $< cat 31 output $@
+	pdftk $< cat 30 output $@
 
 $(LEC).pdf: $(LEC).tex header.tex $(FIGS)
 	xelatex $^
